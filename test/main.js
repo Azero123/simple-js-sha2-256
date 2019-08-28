@@ -30,3 +30,5 @@ for (const input of Object.keys(tests)) {
         throw `input failed ${input} ${sha2_256(input)} should be ${output}`
     }
 }
+
+console.log('✅ tests passed')

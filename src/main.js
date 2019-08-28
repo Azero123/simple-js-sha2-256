@@ -109,10 +109,17 @@ module.exports = m => {
     H[6] = (H[6] + max) % max
     H[7] = (H[7] + max) % max
 
-    const l = 8
-    let _ = ''
-    for (i = 0; i < l; i ++) {
-        _ += H[i].toString(16).padStart(8, '0')
+    
+    let arr = []
+
+    for (let i = 0; i < 8; i++) {
+        const j = i * 4
+        const item = H[i]
+        arr[j] = (item >> 24) & 0xff
+        arr[j + 1] = (item >> 16) & 0xff
+        arr[j + 2] = (item >> 8) & 0xff
+        arr[j + 3] = item & 0xff
     }
-    return _
+
+    return Buffer.from(arr).toString('hex')
 }
