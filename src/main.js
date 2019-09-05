@@ -1,6 +1,7 @@
 
 
 const max = Math.pow(2, 32)
+const fast = typeof window === 'undefined'
 
 const k =
     [
@@ -121,5 +122,8 @@ module.exports = m => {
         arr[j + 3] = item & 0xff
     }
 
-    return Buffer.from(arr).toString('hex')
+    if (fast) {
+        return Buffer.from(arr).toString('hex')
+    }
+    return arr.map(i => i.toString(16).padStart(2, '0')).join('')
 }
