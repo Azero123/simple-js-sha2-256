@@ -6,10 +6,12 @@ hashing:
 ```
 sha2_256('hello') // 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 ```
-performance: 
+performance:
+```
 101.17 kh/s ~ (Core I7-7920HQ single thread)
 99.07 kh/s ~ (3 GHz 8-Core Intel Xeon E5 single thread)
-
+146.520 kh/s ~ (Threadripper 2920X single thread)
+```
 # contribute
 
 bitcoin address: 1KKiniL7QnMPZZLjgGB2Kq1d7zsjUr6TnS

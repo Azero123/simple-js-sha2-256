@@ -1,6 +1,6 @@
 {
   "name": "simple-js-sha2-256",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "simple js sha2 (256bit) implementation",
   "main": "src/main.js",
   "directories": {
