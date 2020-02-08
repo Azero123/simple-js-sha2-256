@@ -124,7 +124,7 @@ module.exports = function(m) {
 
     if (fast) {
         return Buffer.from(arr).toString('hex')
-	}
+    }
 
     return arr.map(function(i) { return i.toString(16).padStart(2, '0') }).join('')
 }
