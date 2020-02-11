@@ -10,8 +10,12 @@ performance:
 ```
 101.17 kh/s ~ (Core I7-7920HQ single thread)
 99.07 kh/s ~ (3 GHz 8-Core Intel Xeon E5 single thread)
-146.520 kh/s ~ (Threadripper 2920X single thread)
+152.74 kh/s ~ (Threadripper 2920X single thread)
 ```
+# code contributors
+
+RazorDE
+
 # contribute
 
 bitcoin address: 1KKiniL7QnMPZZLjgGB2Kq1d7zsjUr6TnS
