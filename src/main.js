@@ -38,8 +38,8 @@ const utf8 = function (str) {
     }
     return output
 }
-  
-module.exports = m => { 
+
+module.exports = function(m) { 
     const ln = m.length * 8
     const H = [1779033703, -1150833019, 1013904242, -1521486534, 1359893119, -1694144372, 528734635, 1541459225]
     const M = utf8(m);
@@ -125,5 +125,6 @@ module.exports = m => {
     if (fast) {
         return Buffer.from(arr).toString('hex')
     }
-    return arr.map(i => i.toString(16).padStart(2, '0')).join('')
+
+    return arr.map(function(i) { return i.toString(16).padStart(2, '0') }).join('')
 }
